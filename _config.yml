@@ -1,0 +1,7 @@
+title: Saida Zeynalova
+description: IT Student | SITE 1101 Portfolio
+baseurl: "/site1101"
+url: "https://saidazeynalova.github.io"
+
+markdown: kramdown
+theme: minima
