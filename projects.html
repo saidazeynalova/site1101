@@ -8,7 +8,6 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -29,14 +28,22 @@
         .gate-image {
             max-width: 100%;
             height: auto;
-            border: 3px solid var(--black); 
+            border: 3px solid #000; 
             padding: 10px;
+            background-color: #fff;
         }
         
         .gate-figure figcaption {
             margin-top: 10px;
             font-size: 0.9em;
             color: #1a1a1a; 
+            font-weight: bold;
+        }
+
+        .project-divider {
+            margin: 50px 0;
+            border: 0;
+            border-top: 2px dashed #ccc;
         }
         
         @media (max-width: 600px) {
@@ -45,13 +52,12 @@
             }
         }
     </style>
-    </head>
+</head>
 <body>
     
-    <header class="site-header">
+<header class="site-header">
     <div class="wrapper">
         <a class="site-title" href="index.html">Saida Zeynalova</a>
-        
         <nav class="site-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
             <label for="nav-trigger">
@@ -70,55 +76,76 @@
         </nav>
     </div>
 </header>
-    <main class="page-content">
-        <div class="wrapper">
-            <h2><span class="highlight-yellow chunky-highlight">Academic Projects & Work</span></h2>
 
-            <p>Here are the projects and exercises I have completed as part of my coursework.</p>
+<main class="page-content">
+    <div class="wrapper">
+        <h2><span class="highlight-yellow chunky-highlight">Academic Projects & Work</span></h2>
+        <p>Here are the projects and exercises I have completed as part of my coursework.</p>
 
+        <section class="project-section">
             <h3>Project 1: How Does Hardware Work?</h3>
-
             <p>This was a <span class="highlight-green"><strong>group project</strong></span> where we explored the basics of digital logic and fundamental computing principles.</p>
-
             <h4>What we explored:</h4>
             <ul>
-                <li>NOT Gate</li>
-                <li>AND Gate</li>
-                <li>OR Gate</li>
-                <li>XOR Gate</li>
-                <li>NAND Gate</li>
+                <li>Logic Gates: NOT, AND, OR, XOR, NAND</li>
+                <li>Transistor-level logic and Truth Tables</li>
+            </ul>
+            <p>By designing these gates, we learned how hardware logic forms the base of computing systems.</p>
+            
+            <div class="project-images-container">
+                <figure class="gate-figure">
+                    <img src="assets/images/NOT-gate.png" alt="Diagram of a NOT Logic Gate" class="gate-image">
+                    <figcaption>NOT Gate</figcaption>
+                </figure>
+                <figure class="gate-figure">
+                    <img src="assets/images/AND-gate.png" alt="Diagram of an AND Logic Gate" class="gate-image">
+                    <figcaption>AND Gate</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <hr class="project-divider">
+
+        <section class="project-section">
+            <h3>Project 2: Hour of AI – Bug Arena</h3>
+            <p>Our team conducted an <strong>Hour of AI</strong> session at a local school. Moving beyond traditional coding, we introduced students to the <strong>Bug Arena</strong> challenge.</p>
+            
+            <h4>Activity Highlights:</h4>
+            <ul>
+                <li>Guided students through AI-driven problem solving and logic.</li>
+                <li>Facilitated the "Bug Arena" competition to test algorithmic thinking.</li>
+                <li>Presented certificates of completion to celebrate student achievements.</li>
             </ul>
             
-            <p>By designing these gates, we learned how hardware logic forms the base of computing systems. Below are visual representations of the NOT and AND gates.</p>
+            <p>It was an inspiring experience to see the next generation engage with AI tools and develop their technical skills in a gamified environment.</p>
 
             <div class="project-images-container">
-                
                 <figure class="gate-figure">
-                    <img src="assets/images/NOT-gate.png" alt="Diagram of a NOT Logic Gate." class="gate-image">
-                    <figcaption>Figure 1: NOT Gate</figcaption>
+                    <img src="assets/images/explanation.jpg" alt="Students listening" class="gate-image">
+                    <figcaption>Students listening to explanation</figcaption>
                 </figure>
-
                 <figure class="gate-figure">
-                    <img src="assets/images/AND-gate.png" alt="Diagram of an AND Logic Gate." class="gate-image">
-                    <figcaption>Figure 2: AND Gate</figcaption>
+                    <img src="assets/images/team-with-students.jpg" alt="Our team with school students" class="gate-image">
+                    <figcaption>Group Photo with Students</figcaption>
                 </figure>
+            </div>
+        </section>
+    </div>
+</main>
 
-        </div>
-    </main>
-
-    <footer class="site-footer">
+<footer class="site-footer">
     <div class="wrapper">
         <div class="footer-col-wrapper">
-            <a href="https://github.com/saidazeynalova" target="_blank" aria-label="GitHub Profile">
+            <a href="https://github.com/saidazeynalova" target="_blank">
                 <i class="fab fa-github fa-lg"></i> GitHub
             </a>
-            <a href="https://www.codecademy.com/profiles/micro2775494267" target="_blank" aria-label="Codecademy Profile">
+            <a href="https://www.codecademy.com/profiles/micro2775494267" target="_blank">
                 <i class="fas fa-code fa-lg"></i> Codecademy
             </a>
-            <a href="mailto:saida.zeynalova2003@gmail.com" aria-label="Email Contact">
+            <a href="mailto:saida.zeynalova2003@gmail.com">
                 <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://github.com/saidazeynalova/site1101" target="_blank" aria-label="Website GitHub Repository">
+            <a href="https://github.com/saidazeynalova/site1101" target="_blank">
                 <i class="fas fa-file-code"></i> Repo
             </a>
         </div>
@@ -127,7 +154,7 @@
         </div>
     </div>
 </footer>
-    <script src="assets/js/script.js"></script>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
